@@ -1,0 +1,15 @@
+<!-- tasks/templates/tasks/task_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+</head>
+<body>
+    <h2>Task List</h2>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task.title }} - {{ task.day }} - {{ task.category }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
